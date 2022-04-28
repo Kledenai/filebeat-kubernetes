@@ -1,0 +1,9 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: filebeat
+  namespace: elasticsearch
+  labels:
+    app.kubernetes.io/name: filebeat
+    app.kubernetes.io/instance: filebeat
+    app.kubernetes.io/version: "7.10.1"
